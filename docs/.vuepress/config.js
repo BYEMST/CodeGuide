@@ -372,6 +372,10 @@ module.exports = {
                             {
                                 text: '创新类型（AI）', items: [
                                     {
+                                        text: 'AI Agent 脚手架 + 场景应用（更新中）',
+                                        link: '/md/project/ai-agent-scaffold/ai-agent-scaffold.md'
+                                    },
+                                    {
                                         text: 'AI MCP Gateway 网关服务系统（更新中）',
                                         link: '/md/project/ai-mcp-gateway/ai-mcp-gateway.md'
                                     },
@@ -584,6 +588,7 @@ module.exports = {
                     "/md/project/s-pay-mall/": getBarSPayMall(),
                     "/md/project/group-buy-market/": getBarGroupBuyMarket(),
                     "/md/project/ai-knowledge/": getBarAiRagKnowledge(),
+                    "/md/project/ai-agent-scaffold/": getBarAIAgentScaffold(),
                     "/md/project/ai-mcp-gateway/": getBarAIMCPGateway(),
                     "/md/project/local-task-message/": getBarLocalTaskMessage(),
                     "/md/project/": getBarDDDSceneSolution(),
@@ -1878,6 +1883,7 @@ function getBarZSXQ() {
             collapsable: false,
             sidebarDepth: 0,
             children: [
+                "project/ai-agent-scaffold.md",
                 "project/ai-mcp-gateway.md",
                 "project/ai-knowledge.md",
                 "project/openai-code-review.md",
@@ -2355,6 +2361,95 @@ function getBarLocalTaskMessage() {
                 "第4节：通知策略处理.md",
                 "第5节：动态任务补偿处理.md",
                 "第6节：切面拦截任务操作.md",
+            ]
+        }
+    ]
+}
+
+function getBarAIAgentScaffold() {
+    return [
+        {
+            title: "介绍",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "ai-agent-scaffold.md",
+                "notes.md",
+            ]
+        },
+        {
+            title: "1阶段 - 做设计",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "part-1/第1-1节：脚手架需求分析.md",
+                "part-1/第1-2节：系统架构设计.md",
+            ]
+        },
+        {
+            title: "2阶段 - 智能体",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "part-2/第2-1节：工程初始化创建.md",
+                "part-2/第2-2节：Api功能测试.md",
+                "part-2/第2-3节：智能体配置表设计.md",
+                "part-2/第2-4节：装配域结构化定义.md",
+                "part-2/第2-5节：装配域节点-AiApiNode.md",
+                "part-2/第2-6节：装配域节点-ChatModelNode.md",
+                "part-2/第2-7节：装配域节点-AgentNode.md",
+                "part-2/第2-8节：装配域节点-AgentWorkflowNode.md",
+                "part-2/第2-9节：装配域节点-Loop、Parallel、Sequential.md",
+                "part-2/第2-10节：装配域节点-RunnerNode.md",
+                "part-2/第2-11节：智能体加载使用验证.md",
+                "part-2/第2-12节：增强装配-RunnerNode.md",
+                "part-2/第2-13节：增强装配-AgentWorkflowNode.md",
+                "part-2/第2-14节：增强装配-本地mcp.md",
+                "part-2/第2-15节：增强装配-回调plugin.md",
+                "part-2/第2-16节：fix-多模态能力使用.md",
+                "part-2/第2-17节：会话服务接口实现-service.md",
+                "part-2/第2-18节：会话服务接口实现-trigger.md",
+                "part-2/第2-19节：会话服务接口对接-ui.md",
+                "part-2/第2-20节：增强装配-skills.md",
+            ]
+        },
+        {
+            title: "3阶段 - 脚手架",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "part-3/第3-1节：Maven脚手架配置.md",
+                "part-3/第3-2节：上传jar到maven仓库.md",
+                "part-3/第3-3节：部署脚手架网页.md",
+            ]
+        },
+        {
+            title: "4阶段 - 场景 - draw.io",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "part-4/第4-0节：ai + draw.io 产品设计.md",
+                "part-4/第4-1节：初始化工程搭建.md",
+                "part-4/第4-2节：在页面嵌入draw.io组件和对话框.md",
+                "part-4/第4-3节：智能体API接口对接.md",
+                "part-4/第4-4节：AI+用户+DrawIO，交互式画图.md",
+                "part-4/第4-5节：ai-draw-io，云服务器部署.md",
+            ]
+        },
+        {
+            title: "5阶段 - 场景 - MobileOpenClaw",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "part-5/第5-1节：初始化工程搭建.md",
+                "part-5/第5-2节：手机网关动作调度设计.md",
+                "part-5/第5-3节：服务端网络通信设计(Netty).md",
+                "part-5/第5-4节：初步通过智能体，操作手机设备.md",
+                "part-5/第5-5节：智能体工作流设计.md",
+                "part-5/第5-6节：异步结果响应.md",
+                "part-5/第5-7节：图片位点识别增强.md",
+                "part-5/第5-8节：多版本安卓版本策略支持.md",
+                "part-5/第5-9节：会话上下文细化处理.md",
             ]
         }
     ]
