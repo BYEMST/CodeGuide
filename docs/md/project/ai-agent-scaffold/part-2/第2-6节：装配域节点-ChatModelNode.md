@@ -1,5 +1,5 @@
 ---
-title: 第2-6节：装配域节点-ChatModelNode
+title: 【更】第2-6节：装配域节点-ChatModelNode
 pay: https://t.zsxq.com/mnTej
 ---
 
