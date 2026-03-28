@@ -205,7 +205,7 @@ module.exports = {
                         ]
                     },
                     {
-                        text: '开发技能',
+                        text: '开发技术',
                         items: [
                         {
                             text: 'Java',
