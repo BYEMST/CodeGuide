@@ -594,7 +594,7 @@ function genBarAI() {
     return [
         {
             title: "框架",
-            collapsable: true,
+            collapsable: false,
             sidebarDepth: 0,
             children: [
                 "spring-ai.md",
@@ -603,7 +603,7 @@ function genBarAI() {
         },
         {
             title: "组件",
-            collapsable: true,
+            collapsable: false,
             sidebarDepth: 0,
             children: [
                 "agent-skill.md",
@@ -612,7 +612,7 @@ function genBarAI() {
         },
         {
             title: "工具",
-            collapsable: true,
+            collapsable: false,
             sidebarDepth: 0,
             children: [
                 "draw.io.md",
